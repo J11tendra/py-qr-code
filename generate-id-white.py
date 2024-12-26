@@ -1,39 +1,3 @@
-# import qrcode
-# from PIL import Image
-
-
-# def create_qr_code_with_logo(url, logo_path, qr_size=290, logo_size=130):
-#     qr = qrcode.QRCode(
-#         version=1,
-#         error_correction=qrcode.constants.ERROR_CORRECT_H,
-#         box_size=10,
-#         border=4,
-#     )
-#     qr.add_data(url)
-#     qr.make(fit=True)
-#     qr_img = qr.make_image(fill_color="rgb(213,68,39)", back_color="white")
-#     qr_img = qr_img.convert("RGBA")
-
-#     # Load the logo
-#     logo = Image.open(logo_path)
-#     logo = logo.convert("RGBA")
-#     logo = logo.resize((logo_size, logo_size))
-
-#     # Position of the logo
-#     x = (qr_img.width - logo.width) // 2
-#     y = (qr_img.height - logo.height) // 2
-
-#     # Paste the logo onto the QR code image with transparency handling
-#     qr_img.paste(logo, (x, y), logo)
-
-#     return qr_img
-
-
-# url = "https://github.com/J11tendra/"
-# logo_path = "new-kuru-1.png"
-# qr_img = create_qr_code_with_logo(url, logo_path)
-# qr_img.save("qr_code_with_logo-1.png")
-
 import qrcode
 from PIL import Image
 
